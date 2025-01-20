@@ -21,12 +21,3 @@ p {
 i {
     color: darkgreen;
 }
-
-a {
-    color: blue;
-    text-decoration: none;
-}
-
-p, h1 {
-    line-height: 1.5em;
-}
