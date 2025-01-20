@@ -7,12 +7,12 @@ body {
 h1 {
     text-align: center;
     color: blue;
-    font-family: 'DancingScriptRegular';
+    font-family: 'Dancing Script', cursive;
     font-size: 400%;
 }
 
 p {
-    font-family: 'DancingScriptRegular';
+    font-family: 'Dancing Script', cursive;
     font-weight: normal;
     font-style: normal;
     font-size: 200%;
@@ -20,4 +20,13 @@ p {
 
 i {
     color: darkgreen;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+p, h1 {
+    line-height: 1.5em;
 }
