@@ -1,1 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IN&display=swap');
 
+
+body {
+    background-image: url('https://raw.githubusercontent.com/luckyykat/dev109/main/m04/IMG_3311.PNG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Playwrite IN', sans-serif;
+    color: #ffffff;
+    margin: 0 auto;
+    width: 90%;
+}
+
+#logo {
+    font-family: 'Playwrite IN', sans-serif;
+    font-size: 3em;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 0;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+
+#nav {
+    background-color: #4b0082;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 1%;
+}
+
+#nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+#nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#feature {
+    background-color: #8a2be2; 
+    background-image: url("https://raw.githubusercontent.com/luckyykat/dev109/main/m04/feature-image.png"); /* Background image */
+    background-size: 10%; 
+    background-position: right center; 
+    background-repeat: no-repeat; 
+    height: 10em;
+    margin-bottom: 1em;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+    width: 100%;
+}
+
+#feature p {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+    color: white; 
+}
+
+#content {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap; 
+    padding: 1em 0;
+}
+
+
+.column1, .column2, .column3 {
+    width: 31%; 
+    height: 8em;
+    background-color: #7b68ee; 
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.column1 { background-color: #7b68ee; }
+.column2 { background-color: #9370db; }
+.column3 { background-color: #d8bfd8; }
+
+#footer {
+    background-color: #663399;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 1em;
+}
