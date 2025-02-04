@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Wellfleet');
+
+body {
+    background-color: #523620;
+    color: white;
+    font-family: 'Wellfleet', serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    background: url('images/bullseye-logo.png') no-repeat center;
+    background-size: contain;
+    height: 120px;
+    text-indent: -9999px; /* Hide text */
+}
+
+#blackboard {
+    background-color: #425a5a;
+    border: 25px solid #523620;
+    border-radius: 20px;
+    padding: 20px;
+    margin: auto;
+    width: 300px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#teacher {
+    background: url('images/teacher.png') no-repeat center;
+    background-size: contain;
+    height: 200px;
+    width: 150px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
