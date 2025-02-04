@@ -1,7 +1,9 @@
+
 @import url('https://fonts.googleapis.com/css?family=Wellfleet');
 
+/* Mustard Yellow Background */
 body {
-    background-color: #523620;
+    background-color: #e1ad01; /* Mustard Yellow */
     color: white;
     font-family: 'Wellfleet', serif;
     text-align: center;
@@ -9,15 +11,17 @@ body {
     padding: 20px;
 }
 
+/* Bullseye Logo */
 h1 {
-    background: url('images/bullseye-logo.png') no-repeat center;
+    background: url('https://raw.githubusercontent.com/luckyykat/dev109/main/m05/bullseye-logo.png') no-repeat center;
     background-size: contain;
     height: 120px;
     text-indent: -9999px; /* Hide text */
 }
 
+/* Green Chalkboard for the Multiplication Table */
 #blackboard {
-    background-color: #425a5a;
+    background-color: #2e4a32; /* Dark Green */
     border: 25px solid #523620;
     border-radius: 20px;
     padding: 20px;
@@ -27,12 +31,16 @@ h1 {
     font-size: 20px;
 }
 
+/* Teacher Image (Only One Instance Now) */
 #teacher {
-    background: url('images/teacher.png') no-repeat center;
-    background-size: contain;
-    height: 200px;
-    width: 150px;
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
+    position: fixed;  /* Keeps it in place while scrolling */
+    right: 20px;      /* Aligns to the right */
+    bottom: 50px;     /* Moves it higher up */
+    width: 150px;     /* Adjust size for better proportion */
+    height: auto;
+}
+
+#teacher img {
+    width: 100%;
+    height: auto;
 }
