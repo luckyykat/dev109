@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Wellfleet');
 
-
 body {
     background-color: #e1ad01;
     color: white;
@@ -10,14 +9,12 @@ body {
     padding: 20px;
 }
 
-
 h1 {
-    background: url('https://raw.githubusercontent.com/luckyykat/dev109/main/m05/bullseye-logo.png') no-repeat center;
+    background: url('images/bullseye-logo1.png') no-repeat center;
     background-size: contain;
     height: 120px;
     text-indent: -9999px; 
 }
-
 
 #blackboard {
     background-color: #2e4a32; 
@@ -31,15 +28,12 @@ h1 {
 }
 
 #teacher {
-    position: absolute;
-    left: 70%; 
-    top: 40%;     
-    transform: translate(50px, 0); 
-    width: 220px; 
-    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 #teacher img {
-    width: 100%;
+    width: 220px;
     height: auto;
 }
