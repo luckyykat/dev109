@@ -1,6 +1,8 @@
 // Prompt user for a number and convert it to a valid number
 let num = prompt("Enter a number (0-10):", "5");
 num = Number(num);
+
+// Validate input
 if (isNaN(num) || num < 0 || num > 10) {
     num = 0; // Default to 0 if invalid
 }
@@ -13,5 +15,5 @@ for (let i = 1; i <= 10; i++) {
     msg += `${num} x ${i} = ${num * i} <br>`;
 }
 
-// Display multiplication table inside the chalkboard div
+// Display multiplication table inside the blackboard div
 document.getElementById('blackboard').innerHTML = msg;
