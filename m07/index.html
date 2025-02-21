@@ -7,30 +7,19 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Hotel Availability</h1>
+    <div class="container">
+        <!-- Left Section: Logo -->
+        <div class="left-panel">
+            <img src="images/travelworthy-logo.gif" alt="TravelWorthy Logo" class="logo">
+        </div>
 
-    <div class="hotel">
-        <img src="images/hotel.jpg" alt="Quay Hotel">
-        <h2>Quay</h2>
-        <p>Rooms: 40</p>
-        <p>Booked Rooms: 25</p>
-        <p id="quay-availability">Available Rooms: </p>
-    </div>
-
-    <div class="hotel">
-        <img src="images/travelworthy-backdrop.jpg" alt="Park Hotel">
-        <h2>Park</h2>
-        <p>Rooms: 120</p>
-        <p>Booked Rooms: 77</p>
-        <p id="park-availability">Available Rooms: </p>
-    </div>
-
-    <div class="hotel">
-        <img src="images/travelworthy-logo.gif" alt="Sunset Hotel">
-        <h2>Sunset</h2>
-        <p>Rooms: 86</p>
-        <p>Booked Rooms: 10</p>
-        <p id="sunset-availability">Available Rooms: </p>
+        <!-- Right Section: Hotel Availability -->
+        <div class="right-panel">
+            <h1>Hotel Availability</h1>
+            <div class="hotel" id="quay"></div>
+            <div class="hotel" id="park"></div>
+            <div class="hotel" id="sunset"></div>
+        </div>
     </div>
 
     <script src="js/script.js"></script>
