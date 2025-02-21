@@ -1,94 +1,105 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+
 /* General Reset */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background: url('../images/hotel.jpg') no-repeat center center/cover;
+    background: url("../images/travelworthy-backdrop.jpg") no-repeat center center fixed;
+    background-size: cover;
     margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
 }
 
-/* Container for layout */
-.container {
-    display: flex;
-    width: 85%;
-    max-width: 1400px;
-    justify-content: space-between;
-    align-items: flex-start;
-    position: relative;
-}
-
-/* Left Column for Logo */
-.left-column {
-    flex: 1;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    position: absolute;
-    top: 20px; 
-    left: 30px; 
-}
-
-/* Logo */
-.logo {
-    width: 120px;
-    height: auto;
-}
-
-/* Right Column - Hotel Info */
-.right-column {
-    flex: 1;
-    background: rgba(0, 0, 0, 0.8);  /* Dark overlay */
-    color: white;
-    padding: 25px;
-    text-align: left;
-    border-radius: 10px;
-    position: absolute;
-    right: 100px; 
-    top: 20%; 
-    width: 300px; 
-}
-
-/* Title */
+/* TravelWorthy Logo at Top Left */
 h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    text-transform: uppercase;
+    background: #1e1b1e url("../images/travelworthy-logo.gif") no-repeat;
+    width: 230px;
+    height: 180px;
+    float: left;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 20px 30px; /* Adjusted positioning */
+}
+
+/* Right-side Black Column */
+#info {
+    background-color: rgba(30, 27, 30, 0.85); /* Slight transparency */
+    color: #fff;
+    width: 260px;
+    padding: 15px;
     text-align: center;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 10%; /* Adjust to move further right */
+    border-radius: 10px;
 }
 
-/* Hotel Details */
-.hotel-info {
+/* Hotel Availability Title */
+h2 {
+    margin-top: 20px;
+    color: #adffda; 
+    font-weight: normal;
+    text-transform: uppercase;
     font-size: 18px;
-    padding: 10px 0;
 }
 
-.hotel-info h2 {
-    font-size: 20px;
-    text-decoration: underline;
+/* Styling Hotel Info in the Black Column */
+.hotel-info {
+    border-top: 1px solid #fff;
+    padding-top: 15px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.hotel-info h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 5px 0;
+}
+
+.hotel-info p {
+    font-size: 14px;
+    color: #ccc;
+    margin: 3px 0;
+}
+
+/* Adjusting Text Spacing */
+h2 + p {
+    margin: 0.25em 0 0 0;
+}
+
+p + p {
+    margin: 0;
+}
+
+p + h2 {
+    margin: 10px 0 0 0;
+}
+
+/* Footer */
+#footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #adffda;
+    text-align: center;
+    padding: 10px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column;
+    #info {
         width: 100%;
-    }
-
-    .left-column {
-        position: relative;
-        justify-content: center;
-        top: 10px;
-        left: 0;
-    }
-
-    .right-column {
         position: relative;
         right: 0;
-        width: 90%;
-        padding: 15px;
+    }
+
+    h1 {
+        float: none;
+        text-align: center;
+        margin: 10px auto;
+        display: block;
     }
 }
