@@ -1,52 +1,59 @@
+/* General Styles */
 body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url("../images/hotel.jpg"); /* Ensure correct path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background: url('../images/hotel.jpg') no-repeat center center fixed;
-    background-size: cover;
+}
+
+/* Remove the semi-transparent black background */
+.left-column, .overlay {
+    background-color: transparent !important; /* Fully transparent */
+}
+
+/* Hotel Availability Section */
+.hotel-container {
     display: flex;
-    height: 100vh;
+    justify-content: flex-end; /* Aligns the text to the right */
     align-items: center;
-    justify-content: center;
+    height: 100vh;
+    padding-right: 5%;
 }
 
-.container {
-    display: flex;
-    width: 80%;
-    height: 80%;
-    background: rgba(0, 0, 0, 0.6);
-}
-
-.left-column {
-    width: 60%;
-    position: relative;
-}
-
-.logo {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 150px;
-}
-
-.right-column {
-    width: 40%;
-    background: black;
+/* Hotel Availability Box */
+.hotel-info {
+    background-color: black; /* Keep solid black */
     color: white;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 300px;
+    border-radius: 10px;
+    text-align: left;
+    opacity: 0.9; /* Slight transparency for effect */
 }
 
-h1 {
-    font-size: 24px;
-    text-transform: uppercase;
-    color: lightgreen;
+/* Move the text UP slightly */
+.hotel-info h1 {
+    margin-top: 10px; /* Adjust to move text higher */
     text-align: center;
+    color: #A5FFAF; /* Light green color */
 }
 
-.hotel-info {
-    border-top: 1px solid white;
-    padding-top: 10px;
+/* Adjust text spacing */
+.hotel-info p {
+    margin: 5px 0;
+}
+
+/* TravelWorthy Logo */
+.logo-container {
+    position: absolute;
+    top: 30px;  
+    left: 40px; 
+}
+
+.logo-container img {
+    width: 120px;
 }
