@@ -1,58 +1,80 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-image: url("../images/hotel.jpg"); /* Ensure correct path */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url('../images/hotel.jpg') no-repeat center center/cover;
     margin: 0;
     padding: 0;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     height: 100vh;
 }
 
-/* Main Layout */
+/* Container for layout */
 .container {
     display: flex;
+    width: 80%;
+    max-width: 1200px;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
-    max-width: 1200px;
 }
 
-/* TravelWorthy Logo Column */
-.logo-container {
+/* Left Column for Logo */
+.left-column {
     flex: 1;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
-.logo-container img {
-    width: 150px; /* Adjust size */
+.logo {
+    width: 150px;
+    height: auto;
 }
 
-/* Hotel Info Column */
-.hotel-info {
+/* Right Column - Hotel Info */
+.right-column {
     flex: 1;
-    background-color: rgba(0, 0, 0, 0.8); /* Slightly transparent black */
+    background: rgba(0, 0, 0, 0.8);  /* Dark overlay */
     color: white;
     padding: 20px;
-    width: 320px;
-    border-radius: 10px;
     text-align: left;
+    border-radius: 10px;
 }
 
-/* Move the text UP slightly */
-.hotel-info h1 {
-    margin-top: 10px; /* Adjust to move text higher */
+/* Title */
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
     text-align: center;
-    color: #A5FFAF; /* Light green color */
 }
 
-/* Adjust text spacing */
-.hotel-info p {
-    margin: 5px 0;
+/* Hotel Details */
+.hotel-info {
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.hotel-info h2 {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .left-column {
+        margin-bottom: 20px;
+    }
+
+    .right-column {
+        width: 100%;
+        padding: 15px;
+    }
 }
