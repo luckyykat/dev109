@@ -29,4 +29,3 @@ function displayHotelInfo(hotel, elementId) {
 // Display all hotels
 displayHotelInfo(quayHotel, "quay");
 displayHotelInfo(parkHotel, "park");
-displayHotelInfo(sunsetHotel, "sunset");
