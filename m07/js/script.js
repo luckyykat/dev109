@@ -9,23 +9,26 @@ function Hotel(name, rooms, booked) {
 }
 
 // Hotel Objects
-var quayHotel = new Hotel("Quay", 40, 25);
-var parkHotel = new Hotel("Park", 120, 77);
-var sunsetHotel = new Hotel("Sunset", 86, 10);
+var hotels = [
+    new Hotel("Quay", 40, 25),
+    new Hotel("Park", 120, 77),
+    new Hotel("Sunset", 86, 10)
+];
 
 // Function to Display Hotel Info
-function displayHotelInfo(hotel, spanId) {
-    var spanElement = document.getElementById(spanId);
-    if (spanElement) {
-        spanElement.innerText = hotel.checkAvailability();
-    } else {
-        console.error(`Element with ID "${spanId}" not found.`);
-    }
+function displayHotels() {
+    var hotelContainer = document.getElementById("hotel-info");
+    hotelContainer.innerHTML = ""; // Clear previous content
+
+    hotels.forEach(hotel => {
+        hotelContainer.innerHTML += `
+            <h2>${hotel.name}</h2>
+            <p>${hotel.rooms} rooms, ${hotel.booked} booked</p>
+            <p>Available Rooms: ${hotel.checkAvailability()}</p>
+            <hr>
+        `;
+    });
 }
 
-// Ensure script runs only after DOM has fully loaded
-document.addEventListener("DOMContentLoaded", function() {
-    displayHotelInfo(quayHotel, "quay-rooms");
-    displayHotelInfo(parkHotel, "park-rooms");
-    displayHotelInfo(sunsetHotel, "sunset-rooms");
-});
+// Display all hotels
+displayHotels();
