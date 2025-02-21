@@ -1,30 +1,30 @@
-// ✅ Ensure script loads
 console.log("multiple-objects.js has loaded!");
 
-// ✅ Hotel Constructor Function
+// Hotel Constructor Function
 function Hotel(name, rooms, booked) {
     this.name = name;
     this.rooms = rooms;
     this.booked = booked;
-    this.checkAvailability = function() {
+    this.checkAvailability = function () {
         return this.rooms - this.booked;
     };
 }
 
-// ✅ Hotel Objects
+// Create two hotel objects
 var quayHotel = new Hotel("Quay", 40, 25);
 var parkHotel = new Hotel("Park", 120, 77);
-var sunsetHotel = new Hotel("Sunset", 86, 10);
 
-// ✅ Function to Display Hotel Info
-function displayHotelInfo(hotel, elementClass) {
-    var hotelElements = document.getElementsByClassName(elementClass);
-    if (hotelElements.length > 0) {
-        hotelElements[0].innerHTML += `<p>Available Rooms: ${hotel.checkAvailability()}</p>`;
+// Function to display hotels
+function displayHotelInfo(hotel, elementId) {
+    var hotelElement = document.getElementById(elementId);
+    if (hotelElement) {
+        hotelElement.innerHTML = `<h2>${hotel.name}</h2>
+                                  <p>Rooms: ${hotel.rooms}</p>
+                                  <p>Booked Rooms: ${hotel.booked}</p>
+                                  <p>Available Rooms: ${hotel.checkAvailability()}</p>`;
     }
 }
 
-// ✅ Display Hotels in HTML
-displayHotelInfo(quayHotel, "hotel");
-displayHotelInfo(parkHotel, "hotel");
-displayHotelInfo(sunsetHotel, "hotel");
+// Display the two hotels
+displayHotelInfo(quayHotel, "hotel1");
+displayHotelInfo(parkHotel, "hotel2");
