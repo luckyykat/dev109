@@ -1,53 +1,52 @@
-/* General Styles */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: url("../images/hotel.jpg");
+    font-family: Arial, sans-serif;
+    background: url('../images/hotel.jpg') no-repeat center center fixed;
     background-size: cover;
-    background-position: center;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Main Container */
 .container {
     display: flex;
     width: 80%;
-    height: 80vh;
+    height: 80%;
+    background: rgba(0, 0, 0, 0.6);
 }
 
-/* Left Panel (Logo) */
-.left-panel {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.left-column {
+    width: 60%;
+    position: relative;
 }
 
 .logo {
-    width: 250px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 150px;
 }
 
-/* Right Panel (Hotel Availability) */
-.right-panel {
-    flex: 1;
-    background: rgba(0, 0, 0, 0.8);
+.right-column {
+    width: 40%;
+    background: black;
     color: white;
     padding: 20px;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 h1 {
-    color: #00ff99;
+    font-size: 24px;
     text-transform: uppercase;
-    border-bottom: 1px solid #00ff99;
-    padding-bottom: 10px;
+    color: lightgreen;
+    text-align: center;
 }
 
-.hotel {
-    padding: 15px;
-    border-bottom: 1px solid white;
+.hotel-info {
+    border-top: 1px solid white;
+    padding-top: 10px;
 }
