@@ -8,31 +8,41 @@ body {
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
-}
-
-/* Remove the semi-transparent black background */
-.left-column, .overlay {
-    background-color: transparent !important; /* Fully transparent */
-}
-
-/* Hotel Availability Section */
-.hotel-container {
     display: flex;
-    justify-content: flex-end; /* Aligns the text to the right */
     align-items: center;
+    justify-content: center;
     height: 100vh;
-    padding-right: 5%;
 }
 
-/* Hotel Availability Box */
+/* Main Layout */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* TravelWorthy Logo Column */
+.logo-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-container img {
+    width: 150px; /* Adjust size */
+}
+
+/* Hotel Info Column */
 .hotel-info {
-    background-color: black; /* Keep solid black */
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.8); /* Slightly transparent black */
     color: white;
     padding: 20px;
-    width: 300px;
+    width: 320px;
     border-radius: 10px;
     text-align: left;
-    opacity: 0.9; /* Slight transparency for effect */
 }
 
 /* Move the text UP slightly */
@@ -45,15 +55,4 @@ body {
 /* Adjust text spacing */
 .hotel-info p {
     margin: 5px 0;
-}
-
-/* TravelWorthy Logo */
-.logo-container {
-    position: absolute;
-    top: 30px;  
-    left: 40px; 
-}
-
-.logo-container img {
-    width: 120px;
 }
