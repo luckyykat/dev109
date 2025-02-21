@@ -8,20 +8,18 @@
 </head>
 <body>
     <div class="container">
-        <!-- Left Section: Logo -->
-        <div class="left-panel">
+        <div class="left-column">
             <img src="images/travelworthy-logo.gif" alt="TravelWorthy Logo" class="logo">
         </div>
-
-        <!-- Right Section: Hotel Availability -->
-        <div class="right-panel">
-            <h1>Hotel Availability</h1>
-            <div class="hotel" id="quay"></div>
-            <div class="hotel" id="park"></div>
-            <div class="hotel" id="sunset"></div>
+        <div class="right-column">
+            <h1>hotel availability</h1>
+            <div class="hotel-info">
+                <p>Quay rooms: <span id="quay-rooms"></span></p>
+                <p>Park rooms: <span id="park-rooms"></span></p>
+                <p>Sunset rooms: <span id="sunset-rooms"></span></p>
+            </div>
         </div>
     </div>
-
     <script src="js/script.js"></script>
 </body>
 </html>
