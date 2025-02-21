@@ -57,7 +57,7 @@ body {
 
 .right-column {
     position: absolute;
-    top: %; 
+    top: 10%; 
     right: 10%; 
     width: 40%;
     background: black;
