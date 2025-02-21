@@ -1,94 +1,53 @@
-/* Importing Open Sans font */
-@import url('http://fonts.googleapis.com/css?family=Open+Sans');
-
-/* General Reset */
 body {
-    background: url("../images/hotel.jpg") no-repeat center center fixed;
-    background-size: cover;
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('../images/hotel.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
 }
 
-/* TravelWorthy Logo - Positioned at Top Left */
-h1 {
-    background: url("../images/travelworthy-logo.gif") no-repeat;
-    width: 230px;
-    height: 180px;
+.container {
+    display: flex;
+    width: 80%;
+    height: 80%;
+}
+
+.left-column {
+    width: 60%;
+    position: relative;
+}
+
+.logo {
     position: absolute;
     top: 20px;
     left: 20px;
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
+    width: 150px;
 }
 
-/* Right-side Black Column */
-#info {
-    background-color: rgba(30, 27, 30, 0.85); /* Black overlay with transparency */
-    color: #fff;
-    width: 280px;
+.right-column {
+    width: 40%;
+    background: rgba(0, 0, 0, 0.8); /* Black overlay */
+    color: white;
     padding: 20px;
-    text-align: center;
-    min-height: 100vh;
-    position: absolute;
-    top: 10%;
-    right: 10%; /* Move further to the right */
-    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Hotel Availability Title */
-h2 {
-    margin-top: 20px;
-    color: #adffda; 
-    font-weight: normal;
+h1 {
+    font-size: 24px;
     text-transform: uppercase;
-    font-size: 18px;
+    color: lightgreen;
+    text-align: center;
 }
 
-/* Styling Hotel Info in the Black Column */
 .hotel-info {
-    border-top: 1px solid #fff;
-    padding-top: 15px;
-    margin-top: 10px;
-    text-align: left;
-}
-
-.hotel-info h3 {
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #fff;
-    margin: 5px 0;
-}
-
-.hotel-info p {
-    font-size: 14px;
-    color: #ccc;
-    margin: 3px 0;
-}
-
-/* Footer */
-#footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #adffda;
-    text-align: center;
-    padding: 10px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    #info {
-        width: 100%;
-        position: relative;
-        right: 0;
-    }
-
-    h1 {
-        float: none;
-        text-align: center;
-        margin: 10px auto;
-        display: block;
-    }
+    border-top: 1px solid white;
+    padding-top: 10px;
+    width: 80%;
 }
