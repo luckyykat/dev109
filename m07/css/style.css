@@ -1,36 +1,38 @@
+/* Importing Open Sans font */
 @import url('http://fonts.googleapis.com/css?family=Open+Sans');
 
 /* General Reset */
 body {
-    background: url("../images/travelworthy-backdrop.jpg") no-repeat center center fixed;
+    background: url("../images/hotel.jpg") no-repeat center center fixed;
     background-size: cover;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
 
-/* TravelWorthy Logo at Top Left */
+/* TravelWorthy Logo - Positioned at Top Left */
 h1 {
-    background: #1e1b1e url("../images/travelworthy-logo.gif") no-repeat;
+    background: url("../images/travelworthy-logo.gif") no-repeat;
     width: 230px;
     height: 180px;
-    float: left;
+    position: absolute;
+    top: 20px;
+    left: 20px;
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
-    margin: 20px 30px; /* Adjusted positioning */
 }
 
 /* Right-side Black Column */
 #info {
-    background-color: rgba(30, 27, 30, 0.85); /* Slight transparency */
+    background-color: rgba(30, 27, 30, 0.85); /* Black overlay with transparency */
     color: #fff;
-    width: 260px;
-    padding: 15px;
+    width: 280px;
+    padding: 20px;
     text-align: center;
     min-height: 100vh;
     position: absolute;
-    top: 0;
-    right: 10%; /* Adjust to move further right */
+    top: 10%;
+    right: 10%; /* Move further to the right */
     border-radius: 10px;
 }
 
@@ -62,19 +64,6 @@ h2 {
     font-size: 14px;
     color: #ccc;
     margin: 3px 0;
-}
-
-/* Adjusting Text Spacing */
-h2 + p {
-    margin: 0.25em 0 0 0;
-}
-
-p + p {
-    margin: 0;
-}
-
-p + h2 {
-    margin: 10px 0 0 0;
 }
 
 /* Footer */
