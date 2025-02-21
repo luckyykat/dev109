@@ -14,18 +14,18 @@ var parkHotel = new Hotel("Park", 120, 77);
 var sunsetHotel = new Hotel("Sunset", 86, 10);
 
 // Function to Display Hotel Info
-function displayHotelInfo(hotel, elementId) {
-    var hotelDiv = document.getElementById(elementId);
-    if (hotelDiv) {
-        hotelDiv.innerHTML = `
-            <h2>${hotel.name}</h2>
-            <p>Rooms: ${hotel.rooms}</p>
-            <p>Booked Rooms: ${hotel.booked}</p>
-            <p>Available Rooms: ${hotel.checkAvailability()}</p>
-        `;
+function displayHotelInfo(hotel, spanId) {
+    var spanElement = document.getElementById(spanId);
+    if (spanElement) {
+        spanElement.innerText = hotel.checkAvailability();
+    } else {
+        console.error(`Element with ID "${spanId}" not found.`);
     }
 }
 
-// Display all hotels
-displayHotelInfo(quayHotel, "quay");
-displayHotelInfo(parkHotel, "park");
+// Ensure script runs only after DOM has fully loaded
+document.addEventListener("DOMContentLoaded", function() {
+    displayHotelInfo(quayHotel, "quay-rooms");
+    displayHotelInfo(parkHotel, "park-rooms");
+    displayHotelInfo(sunsetHotel, "sunset-rooms");
+});
