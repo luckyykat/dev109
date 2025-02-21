@@ -1,3 +1,4 @@
+
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
@@ -42,17 +43,23 @@ body {
 
 /* Right Panel (Hotel Availability) */
 .right-panel {
-    flex: 1;
+    width: 35%;
     background: rgba(0, 0, 0, 0.8);
     color: white;
     padding: 20px;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15%;
+    right: 10%;
 }
 
 .right-column {
     position: absolute;
     top: 10%; 
-    right: 5%; 
+    right: 10%; 
     width: 40%;
     background: black;
     color: white;
