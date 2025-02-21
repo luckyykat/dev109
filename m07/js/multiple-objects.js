@@ -11,19 +11,20 @@ function Hotel(name, rooms, booked) {
     };
 }
 
-// ✅ Create Hotel Objects
+// ✅ Hotel Objects
 var quayHotel = new Hotel("Quay", 40, 25);
 var parkHotel = new Hotel("Park", 120, 77);
+var sunsetHotel = new Hotel("Sunset", 86, 10);
 
 // ✅ Function to Display Hotel Info
-function displayHotelInfo(hotel, elementId) {
-    var hotelInfo = `<h2>${hotel.name}</h2>
-                     <p>Rooms: ${hotel.rooms}</p>
-                     <p>Booked Rooms: ${hotel.booked}</p>
-                     <p>Available Rooms: ${hotel.checkAvailability()}</p>`;
-    document.getElementById(elementId).innerHTML = hotelInfo;
+function displayHotelInfo(hotel, elementClass) {
+    var hotelElements = document.getElementsByClassName(elementClass);
+    if (hotelElements.length > 0) {
+        hotelElements[0].innerHTML += `<p>Available Rooms: ${hotel.checkAvailability()}</p>`;
+    }
 }
 
 // ✅ Display Hotels in HTML
-displayHotelInfo(quayHotel, "hotel1");
-displayHotelInfo(parkHotel, "hotel2");
+displayHotelInfo(quayHotel, "hotel");
+displayHotelInfo(parkHotel, "hotel");
+displayHotelInfo(sunsetHotel, "hotel");
