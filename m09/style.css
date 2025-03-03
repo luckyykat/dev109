@@ -1,0 +1,19 @@
+/* Background and Dot Placement */
+body {
+  height: 400px; 
+  background: beige;
+  position: relative; 
+  margin: 0;
+  padding: 10px;
+}
+
+/* Dot Style */
+.dot {
+  border-radius: 50%;  
+  position: absolute;  
+}
+
+/* Options Style */
+#options {
+  margin: 10px 0;
+}
